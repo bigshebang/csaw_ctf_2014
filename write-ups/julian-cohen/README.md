@@ -1,11 +1,14 @@
 Julian Cohen - Recon 100
 ========================
 ## Challenge
-**Description:** Figure out how to get Julian to go on a date with you.
 
-**Hints:** Julian uses OkCupid
-
-**Author:** HockeyInJune
+> **Description:** Figure out how to get Julian to go on a date with you.
+> 
+> **Hints:** Julian uses OkCupid
+> 
+> **Author:** HockeyInJune
+>
+> **Solvers:** 331
 
 ## Solution
 
