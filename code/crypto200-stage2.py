@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from math import floor
 from sys import argv, exit
 
@@ -12,9 +13,9 @@ def decode(myStr):
 		counter = 0
 		i = 0
 		last = 0
-		leftover = strLen % key
+		leftover = strLen % key #num of rows with one extra character
 		minNum = int(floor(float(strLen) / float(key)))
-		while i < strLen:
+		while i < strLen: #create rows
 			if counter < leftover:
 				i += minNum + 1
 			else:
@@ -30,7 +31,7 @@ def decode(myStr):
 		
 		columns = list()
 		i = 0
-		while i < len(rows):
+		while i < len(rows): #create columns
 			j = 0
 			for char in rows[i]:
 				index = j % len(rows[i])
@@ -43,9 +44,10 @@ def decode(myStr):
 			i += 1
 
 		longStr = "".join(columns)
-		if longStr[:10] == "I hope you":
+		if longStr[:10] == "I hope you": #check if it decrypted correctly
 			break
 
+	#find the key which is in between double quotes
 	firstQuote = longStr.find('"') + 1
 	return longStr[firstQuote:longStr.find('"', firstQuote)]
 
